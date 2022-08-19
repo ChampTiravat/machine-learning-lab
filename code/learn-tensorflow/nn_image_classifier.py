@@ -98,14 +98,22 @@ print(fashion_mnist_class_names)
 
 if not config['SHOW_IMAGE']:
     # Display result without image.
+
     label = fashion_mnist_class_names[test_labels[0]]
-    print(classifications[0])
+    classification_result = classifications[0]
+
+    print(classification_result)
     print('Prediction: {}'.format(label))
+
 else:
     # Display result with images.
+
     for i in range(10):
-        print(classifications[i])
+        classification_result = classifications[i]
+        result_image = test_images[i]
         label = fashion_mnist_class_names[test_labels[i]]
+
+        print(classification_result)
         plt.title('Prediction: {}'.format(label))
-        plt.imshow(test_images[i])
+        plt.imshow(result_image)
         plt.show()
