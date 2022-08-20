@@ -69,7 +69,7 @@ model.fit(
     train_images,
     train_labels,
     epochs=config['EPOCHS'],
-    callbacks=[callbacks],
+    #callbacks=[callbacks],
 )
 
 
