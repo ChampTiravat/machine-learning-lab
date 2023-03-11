@@ -8,6 +8,7 @@ from tensorflow.keras.layers import Flatten
 from tensorflow.keras.datasets import fashion_mnist as dataset
 from tensorflow.keras.callbacks import Callback
 
+
 config = {
     'EPOCHS': 50,
 
@@ -26,8 +27,8 @@ config = {
 
 
 # Data normalization so the model can train faster and perform better.
-train_images = train_images / 255.0
-test_images = test_images / 255.0
+train_images = train_images // 255.0
+test_images = test_images // 255.0
 
 
 model = Sequential([
