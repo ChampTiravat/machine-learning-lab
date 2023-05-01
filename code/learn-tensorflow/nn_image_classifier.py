@@ -70,7 +70,7 @@ model.fit(
     train_images,
     train_labels,
     epochs=config['EPOCHS'],
-    #callbacks=[callbacks],
+    # callbacks=[callbacks],
 )
 
 
@@ -94,11 +94,10 @@ fashion_mnist_class_names = [
     "Bag",
     "Ankle boot",
 ]
-print(fashion_mnist_class_names)
 
 
 if not config['SHOW_IMAGE']:
-    # Display result without image.
+    # Display the result without image.
 
     label = fashion_mnist_class_names[test_labels[0]]
     classification_result = classifications[0]
